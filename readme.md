@@ -2,7 +2,7 @@ Setting up a VPN Gateway in OPNsense with ProtonVPN
 
 Go to ProtonVPN, sign in with your credentials.
 From the left navigation pane, select OpenVPN/IKEv2
- 
+ ![Alt text](Assets/Images/Picture1.png)
 Under OpenVPN configuration files, select the router radio button, select the UDP radio button, then scroll down and select a mirror of your choice. Download the .ovpn file.
  
 Open the .ovpn file with a text editor, and set to the side.
