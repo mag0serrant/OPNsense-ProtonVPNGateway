@@ -41,7 +41,7 @@ Under advanced configuration add [tun-mtu 1500; tun-mtu-extra 32; mssfix 1450; p
 
  ![Alt text](Assets/Images/Picture10.png)
  
-Go To Interfaces > Assignments. There should be a new interface listed with an orange + symbol next to it. Click the +. The click on the hyperlink of that new interface and edit. Create a description. Check the block bogon networks box. Check the Dynamic gateway policy box. Click save and apply changes.
+Go To Interfaces > Assignments. There should be a new interface listed with an orange + symbol next to it. Click the +. The click on the hyperlink of that new interface and edit. Create a description. Check the block bogon networks box. Click save and apply changes.
 
  ![Alt text](Assets/Images/Picture11.png)
 
