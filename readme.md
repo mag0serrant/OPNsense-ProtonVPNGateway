@@ -1,4 +1,4 @@
-Setting up a VPN Gateway in OPNsense with ProtonVPN
+Routing Outbound Traffic Through ProtonVPN with OPNsense
 
 Go to ProtonVPN, sign in with your credentials.
 From the left navigation pane, select OpenVPN/IKEv2
@@ -43,7 +43,7 @@ Under advanced configuration add [tun-mtu 1500; tun-mtu-extra 32; mssfix 1450; p
  
 Go To Interfaces > Assignments. There should be a new interface listed with an orange + symbol next to it. Click the +. The click on the hyperlink of that new interface and edit. Create a description. Check the block bogon networks box. Click save and apply changes.
 
- ![Alt text](Assets/Images/Picture11.png)
+  ![Alt text](Assets/Images/Picture11.png)
 
 Go to Firewall > NAT > Outbound. Select the Hybrid outbound NAT rule generation radio button and press save. Create a new manual rule with the + button.
 
