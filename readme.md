@@ -33,11 +33,11 @@ Under User Authentication Settings, enter the username and password shown to you
 
  ![Alt text](Assets/Images/Picture8.png)
 
-Uncheck the automatic TLS key box, and copy and paste the TLS certificate information into the TLS Shared Key Box. Set Certificate Authority as ProtonVPN. Set Auth Digest Algorithm as SHA512.
+Uncheck the automatic TLS key box, and copy and paste the TLS certificate information into the TLS Shared Key Box. Set Certificate Authority as ProtonVPN. Set Encryption Algorith to AES-256-GCM. Set Auth Digest Algorithm as SHA512.
 
  ![Alt text](Assets/Images/Picture9.png)
 
-Under tunnel Setting, check the Don’t Pull Routes box and Don’t add/remove routes box. Set Verbosity level to 3, and save.
+Under advanced configuration add [tun-mtu 1500; tun-mtu-extra 32; mssfix 1450; persist-key; persist-tun; reneg-sec 0; remote-cert-tls server; pull;] without brackets. Set Verbosity level to 3, and save.
 
  ![Alt text](Assets/Images/Picture10.png)
 
@@ -53,13 +53,4 @@ Select the ProtonVPN interface. Leave everything as default and save, then selec
 
 ![Alt text](Assets/Images/Picture13.png)
 
-Go to System > Gateways > Single. Edit the named (non WAN) dhcp 4 gateway with the pencil icon. For me, it was the PROTONVPN_GA69_VPNV4 seen below. (All your play buttons would likely be green at this stage)
-
-![Alt text](Assets/Images/Picture14.png)
-
-Uncheck Disable Gateway Monitoring. Enter a Monitor IP (I used Cloudflare’s DNS). Set priority to a number lower than the priority number of the WAN interface (It defaults to 254).
-
- ![Alt text](Assets/Images/Picture15.png)
-
-If desired, go back and disable all other gateways. Hooray. Now all your traffic goes through ProtonVPN.
-You can set up multiple VPN providers and/or different servers from the same provider in the same way. Then set up gateways for each of them as shown above. If you do this, you can set up Gateway groups that automatically failover.
+Complete. All your outbound traffic will now travel through the VPN.
