@@ -25,7 +25,7 @@ Go to VPN > OpenVPN > Clients.
 
  ![Alt text](Assets/Images/Picture6.png)
 
-Press the + button to create a new OpenVPN client. Provide a name. Set protocol to UDP 4. Set interface to WAN. Enter the server information from the .ovpn file. Check the select remote server at random box (if more than one server/port combination was entered). Check the Infinitely resolve remote server box.
+Press the + button to create a new OpenVPN client. Provide a name. Set protocol to UDP4 or TCP4 depending on certificate. Set interface to WAN. Enter the server information from the .ovpn file. Check the select remote server at random box (if more than one server/port combination was entered). Check the Infinitely resolve remote server box.
 
  ![Alt text](Assets/Images/Picture7.png)
 
