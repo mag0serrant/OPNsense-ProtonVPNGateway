@@ -25,7 +25,7 @@ Go to VPN > OpenVPN > Clients.
 
  ![Alt text](Assets/Images/Picture6.png)
 
-Press the + button to create a new OpenVPN client. Provide a name. Set protocol to UDP 4. Set interface to WAN. Enter the server information from the .ovpn file. Check the select remote server at random box (if more than one server/port combination was entered). Check the Infinitely resolve remote server box.
+Press the + button to create a new OpenVPN client. Provide a name. Set protocol to UDP4 or TCP4 depending on certificate. Set interface to WAN. Enter the server information from the .ovpn file. Check the select remote server at random box (if more than one server/port combination was entered). Check the Infinitely resolve remote server box.
 
  ![Alt text](Assets/Images/Picture7.png)
 
@@ -37,11 +37,15 @@ Uncheck the automatic TLS key box, and copy and paste the TLS certificate inform
 
  ![Alt text](Assets/Images/Picture9.png)
 
+<<<<<<< HEAD
 Under advanced configuration add [tun-mtu 1500; tun-mtu-extra 32; mssfix 1450; persist-key; persist-tun; reneg-sec 0; remote-cert-tls server; pull;] without brackets. Set Verbosity level to 3, and save.
 
  ![Alt text](Assets/Images/Picture10.png)
 
 Go To Interfaces > Assignments. There should be a new interface listed with an orange + symbol next to it. Click the +. The click on the hyperlink of that new interface and edit. Create a description. Check the block bogon networks box. Check the Dynamic gateway policy box. Click save and apply changes.
+=======
+Go To Interfaces > Assignments. There should be a new interface listed with an orange + symbol next to it. Click the +. The click on the hyperlink of that new interface and edit. Create a description. Check the block bogon networks box. Click save and apply changes.
+>>>>>>> b2869aeaa891bf9178a5dc7571bc972ec9fc2db9
 
  ![Alt text](Assets/Images/Picture11.png)
 
@@ -52,5 +56,8 @@ Go to Firewall > NAT > Outbound. Select the Hybrid outbound NAT rule generation 
 Select the ProtonVPN interface. Leave everything as default and save, then select apply changes.
 
 ![Alt text](Assets/Images/Picture13.png)
+<<<<<<< HEAD
 
 Complete. All your outbound traffic will now travel through the VPN.
+=======
+>>>>>>> b2869aeaa891bf9178a5dc7571bc972ec9fc2db9
